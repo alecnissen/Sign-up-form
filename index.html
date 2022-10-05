@@ -5,23 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up-form</title> 
-    <h1>Sign up now!</h1>
-    <h2>Let's do it!</h2>
+    <h1>This is a demo registration page! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</h1>
+    <h1>You know you want to.</h1>
+    <h1>Let's do this!</h1> 
+    <p>Fields marked with an asterisk (*) are required</p>
 </head>
-<body>
-    <form> 
-        <div class="container-for-info">
-        <label for="fname">First Name</label>
-        <br>
-        <input type="text" id="fname" placeholder="Your first name ie-John">
-    </div>  
+<body> 
     
-    <div class="container"> 
-    <label for="lname">Last Name</label>
-    <br>
-    <input type="text" id="lname" placeholder="Your last name ie-Smith"> 
-</div>
+    <form method="GET" action="index.html"> 
+        
+        <div class="fname-container" style="float:left">
+        <label for="fname">FIRST NAME *</label>
+        <br>
+        <input type="text" id="fname" name="first-name" placeholder="John">
+     </div> 
 
+        <div class="lname-container"> 
+        <label for="lname">LAST NAME *</label>
+        <br> 
+        <input type="text" id="lname" name="last-name" placeholder="Smith"> 
+    </div> 
+    <br>
+    <div class="e-mail-container" style="float:left;"> 
+        <label for="e-mail">EMAIL</label> 
+        <br> 
+        <input type="e-mail" id="e-mail" name="e-mail" placeholder="person@gmail.com">
+    </div> 
+
+    <div class="phone-#-container"> 
+        <label for="phone">PHONE</label>
+        <br>
+        <input type="tel" name="phone" id="phone" placeholder="xxx-xxx-xxx"> 
+    </div>  
+
+    <br>
+
+    <div class="password-container" style="float:left"> 
+        <label for="password">PASSWORD</label>
+        <br>
+        <input type="password" id="password" name="password" placeholder="Create a unique password"> 
+    </div> 
+    
+    <div class="confirm-password-container">
+        <label for="confirm-password">CONFIRM PASSWORD</label>
+        <br> 
+        <input type="password" id="confirm-password" name="password-confirmation" placeholder="Confirm your password">
+    </div> 
+    <br> 
+
+    <button class="create-account-btn">CREATE ACCOUNT</button>
+    <br> 
+    <p>Already have an account? <a href="index.html">Log in</a></p> 
+    
     
     </form>
 </body>
