@@ -1,28 +1,76 @@
 .header-containers { 
     background-color: lightgrey;
     display: flex; 
-    flex-direction: column;
+    flex-direction: column;  
+    justify-content: flex-start;
+    font-size: 36px;
 } 
 
 .btn-container { 
     background-color: lightgrey; 
+    display: flex; 
+    justify-content: flex-start; 
+    font-size: 22px;
 } 
 
 .names-container { 
     display: flex; 
     justify-content: flex-start; 
     gap: 35px; 
+    font-size: 22px;
 }
 
 
 .e-mail-phone-container { 
     display: flex; 
-    justify-content: flex-start; 
+    justify-content: flex-start;
     gap: 35px; 
-} 
+    font-size: 22px;
+}
 
 .password-container { 
     display: flex; 
     justify-content: flex-start; 
     gap: 35px; 
+    font-size: 22px;
 }
+ 
+/* body { 
+    background-image: url(images/space-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: 30%;
+
+} */ 
+
+/* body { 
+    background-image: url(images/space-background.jpg); 
+    background-size: 50% 100%; 
+    background-position: left; 
+    background-repeat: no-repeat;
+}  */
+
+.form-headers { 
+    display: flex; 
+    justify-content: flex-start;
+    font-size: 22px;
+} 
+
+
+#left-containers { 
+    background-image: url(images/space-background.jpg);
+    width: 50%; 
+    position: absolute; 
+    left: 0px; 
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+
+#right-containers { 
+    width: 50%; 
+    position: absolute; 
+    right: 0px; 
+    height: 100%; 
+} 
+
