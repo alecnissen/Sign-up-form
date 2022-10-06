@@ -4,29 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Sign-up-form</title> 
+    <style> 
+ 
+    </style>
+</head> 
+<body> 
+    <div class="header-containers"> 
     <h1>This is a demo registration page! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</h1>
     <h1>You know you want to.</h1>
+    </div>  
     <h1>Let's do this!</h1> 
     <p>Fields marked with an asterisk (*) are required</p>
-</head>
-<body> 
     
     <form method="GET" action="index.html"> 
         
-        <div class="fname-container" style="float:left">
+
+        <div class="names-container">
+        <label for="fname">
+        <span>FIRST NAME *</span>
+        <br>
+        <input type="text" id="fname" name="first-name" placeholder="John">
+        </label>
+        <label for="lname">
+            <span>LAST NAME *</span>
+        <br> 
+        <input type="text" id="lname" name="last-name" placeholder="Smith"> 
+    </label>
+    </div> 
+    <br>
+    
+    <div class="e-mail-phone-container"> 
+        <label for="e-mail"> 
+        <span>EMAIL</span>
+        <br> 
+        <input type="e-mail" id="e-mail" name="e-mail" placeholder="person@gmail.com">
+        </label> 
+
+    
+        <label for="phone">
+        <span>PHONE</span>
+        <br>
+        <input type="tel" name="phone" id="phone" placeholder="xxx-xxx-xxx"> 
+    </label>
+    </div>  
+
+    <br>
+
+    <div class="password-container"> 
+        <label for="password">
+        <span>PASSWORD</span>
+        <br>
+        <input type="password" id="password" name="password" placeholder="Create a unique password"> 
+        </label>
+    
+    
+        <label for="confirm-password">
+        <span>CONFIRM PASSWORD</span>
+        <br> 
+        <input type="password" id="confirm-password" name="password-confirmation" placeholder="Confirm your password">
+    </label>
+    </div> 
+    <br> 
+
+    <div class="btn-container"> 
+    <button class="create-account-btn">CREATE ACCOUNT</button>
+    <br> 
+    <p>Already have an account? <a href="index.html">Log in</a></p> 
+    </div> 
+
+    </form> 
+
+  
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign-up-form</title> 
+    <style> 
+ 
+    </style>
+</head> 
+<body> 
+    <div class="header-containers"> 
+    <h1>This is a demo registration page! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</h1>
+    <h1>You know you want to.</h1>
+    </div>  
+    <h1>Let's do this!</h1> 
+    <p>Fields marked with an asterisk (*) are required</p>
+    
+    <form method="GET" action="index.html"> 
+        
+
+        <div class="names-container">
         <label for="fname">FIRST NAME *</label>
         <br>
         <input type="text" id="fname" name="first-name" placeholder="John">
-     </div> 
-
-        <div class="lname-container"> 
         <label for="lname">LAST NAME *</label>
         <br> 
         <input type="text" id="lname" name="last-name" placeholder="Smith"> 
     </div> 
     <br>
-    <div class="e-mail-container" style="float:left;"> 
+    
+    <div class="e-mail-container"> 
         <label for="e-mail">EMAIL</label> 
         <br> 
         <input type="e-mail" id="e-mail" name="e-mail" placeholder="person@gmail.com">
@@ -40,7 +159,7 @@
 
     <br>
 
-    <div class="password-container" style="float:left"> 
+    <div class="password-container"> 
         <label for="password">PASSWORD</label>
         <br>
         <input type="password" id="password" name="password" placeholder="Create a unique password"> 
@@ -53,11 +172,14 @@
     </div> 
     <br> 
 
+    <div class="btn-container"> 
     <button class="create-account-btn">CREATE ACCOUNT</button>
     <br> 
     <p>Already have an account? <a href="index.html">Log in</a></p> 
-    
-    
-    </form>
+    </div> 
+
+    </form> 
+
+  
 </body>
-</html>
+</html> -->

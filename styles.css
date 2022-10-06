@@ -1,4 +1,28 @@
-.lname-container { 
-    margin: 40px;
+.header-containers { 
+    background-color: lightgrey;
+    display: flex; 
+    flex-direction: column;
+} 
+
+.btn-container { 
+    background-color: lightgrey; 
+} 
+
+.names-container { 
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 35px; 
 }
 
+
+.e-mail-phone-container { 
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 35px; 
+} 
+
+.password-container { 
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 35px; 
+}
