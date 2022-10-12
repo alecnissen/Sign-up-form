@@ -411,13 +411,16 @@ input[type=text] {
   
   /* Add a green text color and a checkmark when the requirements are right */
   .valid {
-    color: green;
+    /* color: green; */
+    color: rgb(2, 44, 2);  
+    font-weight: bolder; 
   }
   
   .valid:before {
     position: relative; 
     left: -35px;
     content: '✓';
+    /* background: #f1f1f1; */
   }
   
   /* Add a red text color and an "x" icon when the requirements are wrong */
