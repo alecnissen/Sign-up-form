@@ -18,14 +18,16 @@
             <img src="images/odin-lined.png">  
             <span class="logo-text">ODIN</span> 
     </div>
-    </div> 
+<p class="color"></p>    
+</div> 
     
+ 
    
    
     <div id="right-containers"> 
 
    
-    
+        <div class="ice-picture-background-container"> 
     <div class="header-containers"> 
         <!-- used h1 previously -->
     <p>This is a demo registration page! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
@@ -35,14 +37,14 @@
     <div class="form-headers"> 
     <h1>Let's do this!<h1> 
     </div>
-
+    
     <div class="fields-marked-text-container"> 
-<p class="fields-marked-txt">Fields marked with an asterisk (*) are required</p>
+        <p class="fields-marked-txt">Fields marked with an asterisk (*) are required</p>
 </div>
     
 <form method="GET" action="index.html"> 
         
-
+        
         <div class="names-container">
         <label for="fname">
         <span>FIRST NAME *</span>
@@ -74,12 +76,27 @@
         <label for="password">
         <span>PASSWORD</span>
         <br>
-        <input type="password" id="password" name="password" placeholder="Create a unique password" class="error" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required> 
+        
+        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="password" name="password" placeholder="Create a unique password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required> 
+   
+        <div class="password-check-container"> 
+        <div id="message">
+            <!-- <h3>Password must contain the following:</h3> -->
+            <p id="letter" class="invalid">A lowercase letter</p>
+            <p id="capital" class="invalid">A capital letter</p>
+            <p id="number" class="invalid">A number</p>
+            <p id="length" class="invalid">Minimum 8 characters</p>
+          </div> 
+        </div>
         </label>
         <label for="confirm-password">
         <span>CONFIRM PASSWORD</span>
         <br> 
         <input type="password" id="confirm-password" name="password-confirmation" placeholder="Confirm your password" class="error" required>
+    
+    
+    
+    
     </label>
     </div> 
     <br> 
@@ -93,8 +110,38 @@
     </div> 
 
     </form> 
-
 </div>
+    </div>
+</div> 
+
+
+
+
+<!-- old password validation no pop-up  -->
+<!-- <div id="message">
+    <h3>Password must contain the following:</h3>
+    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+    <p id="capital" class="invalid">A <b>capital(uppercase)</b>letter</p>
+    <p id="number" class="invalid">A <b>number</b></p>
+    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+  </div>  -->
+
+  <!-- <div id="pswd_info">
+    <p class="pp"><b>Password must have:</b></p>
+    <ul>
+      <li id="length" class="invalid" style="color:#9e9fa1;">atleast 8 characters</li>
+      <li id="capital" class="invalid" style="color:#9e9fa1;">atleast 1 uppercase</li>
+      <li id="letter" class="invalid" style="color:#9e9fa1;">atleast 1 lowercase</li>
+      <li id="number" class="invalid" style="color:#9e9fa1;">atleast 1 number</li>
+      <li id="special" class="invalid" style="color:#9e9fa1;">atleast 1 special char</li>
+    </ul>
+  </div> -->
+
+
+<script src="main.js"></script> 
+
+
+<a href="https://unsplash.com/@yosoybrod?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bryan Rodriguez</a> on <a href="https://unsplash.com/s/photos/ice?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </body>
 </html> 
 

@@ -38,8 +38,13 @@ img {
     background-color: rgb(87, 102, 187);
     display: flex; 
     justify-content: center; 
+    align-content: flex-end;
     font-size: 20px;
     font-family: 'norsebold';
+    /* margin-top: 40px;  */
+    padding: 10px; 
+    position: relative; 
+    top: 4em; 
 } 
 
 .names-container { 
@@ -48,6 +53,8 @@ img {
     gap: 80px; 
     font-size: 25px; 
     font-family: 'norsebold'; 
+    position: relative; 
+    bottom: 2em; 
 }
 
 
@@ -57,6 +64,8 @@ img {
     gap: 80px; 
     font-size: 25px;
     font-family: 'norsebold';
+    position: relative; 
+    bottom: 2.4em; 
 }
 
 .password-container { 
@@ -66,6 +75,8 @@ img {
     gap: 80px; 
     font-size: 25px; 
     font-family: 'norsebold'; 
+    position: relative; 
+    bottom: 2.9em; 
 }
  
 
@@ -78,15 +89,16 @@ img {
 
 
 #left-containers { 
-    background-image: url(images/mountain-pic-sup.jpg);
+    background-image: url(images/mountain-pic-sup.jpg); 
     width: 50%; 
     position: absolute; 
     left: 0px; 
-    height: 100%; 
-    background-repeat: no-repeat;
+    height: 110%; 
+    background-repeat:no-repeat;
     background-position: center;
     background-size: cover;
 }  
+
 
 
 #right-containers { 
@@ -106,6 +118,8 @@ img {
 
 .fields-marked-txt { 
     font-family: 'norsebold'; 
+    position: relative; 
+    bottom: 2em;
 }  
 
 .fields-marked-text-container { 
@@ -121,6 +135,8 @@ img {
     border-radius: 8%; 
     width: 35%; 
     height: 35%; 
+    position: relative; 
+    bottom: 3.2em; 
 }
 
 .create-account-btn:hover { 
@@ -345,4 +361,127 @@ input[type=text] {
     border-radius: 8%; 
     width: 35%; 
     height: 35%; 
+} */ 
+
+ 
+/* Password validation, styling the message box 
+
+/* The message box is shown when the user clicks on the password field */
+
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+    /* display:none; */
+    display: none;
+    /* background: #f1f1f1; */
+    color: #000;
+    /* position: relative; */
+    /* padding: 20px;
+    margin-top: 10px; */
+    /* height: auto; 
+    width: auto;  */
+    position: relative;
+    left: 4em; 
+  }
+  
+  #message p {
+    font-size: 30px;
+    display: flex;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative; 
+    left: -35px;
+    content: '✓';
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: '🗴';
+  }
+
+/* @media (min-width: 1163px) { 
+    #message { 
+       width: 30%; 
+       height: 30%; 
+       position: relative;
+       
+    }
 } */
+
+
+/* .pass-container-2 { 
+
+    align-items:stretch;
+}
+
+.confirm-password-container { 
+   
+    align-items: stretch; 
+} */
+
+
+.ice-picture-background-container { 
+    background-image: url(images/mountain-pic-sup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+
+
+/* Photo by <a href="https://unsplash.com/@yosoybrod?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bryan Rodriguez</a> on <a href="https://unsplash.com/s/photos/ice?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+  
+body { 
+    background-image: url(images/big-rocks.jpg);
+    background-repeat: repeat;
+    /* background-size: cover;  */
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Password validation  */ 
+
