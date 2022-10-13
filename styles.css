@@ -407,7 +407,9 @@ input[type=text] {
   #message p {
     font-size: 35x;
     display: flex;
-  }
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+}
   
   /* Add a green text color and a checkmark when the requirements are right */
   .valid {
