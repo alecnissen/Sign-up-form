@@ -13,12 +13,17 @@ img {
 
 .logo-text { 
     font-family: 'norsebold';
-    font-size: 19em;
+    font-size: 17em;
     color: white;   
     position: relative; 
     bottom: 45px; 
     left: 30px;  
-} 
+    /* text-align:  center; */
+}  
+
+.img-logo-text { 
+    text-align: center;
+}
 
 
 .header-containers { 
@@ -32,7 +37,22 @@ img {
     color: rgb(196, 178, 178); 
     width: auto; 
     height: auto; 
+    
 } 
+
+
+.sign-up-text { 
+    text-align: center; 
+    text-decoration: underline;
+}
+
+.demo-text { 
+    margin-left: 18px; 
+} 
+
+.you-know-text { 
+    text-align: center;
+}
 
 .have-an-account-login-container{ 
     /* background-color: rgb(87, 102, 187); */ 
